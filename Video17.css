@@ -1,0 +1,48 @@
+
+        /* Element Selector */
+        div {
+            color: blueviolet;
+        }
+
+        /* Class Selector */
+        .new {
+            color: darkturquoise
+        }
+
+        /* id selector */
+        #green {
+            background-color: aquamarine;
+        }
+
+        /* child selector */
+        div>p {
+            color: cadetblue;
+        }
+
+        /* Descendant selector  */
+        div p {
+            color: blue
+        }
+        /* Universal Selector */
+        *{
+            margin:0;
+            padding:0;
+        }
+        /* Psuedo Selector */
+        a:visited{
+            color:goldenrod
+        }
+
+        /* unvisited link */
+        a:link{
+            color: blueviolet;
+        }
+
+        a:active{
+            color:cadetblue;
+        }
+
+        a:hover{
+            color: brown;
+        }
+    
