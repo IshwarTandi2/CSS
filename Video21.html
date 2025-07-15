@@ -3,9 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS 2</title>
+    <title>CSS - Specificity and cascade</title>
+    <style>
+        .first{
+            color: brown;
+        }
+        
+        .third{
+            color: blueviolet;
+        }
+        .second{
+            color: burlywood;
+        }
+        h1{
+            color: black !important;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1 class="first second third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam consectetur ipsum alia .</h1>
 </body>
 </html>
