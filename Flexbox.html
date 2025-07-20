@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            width: 98vw;
+            height:80vh;
+            display: flex;
+            justify-content:center;
+            align-items:center;
+            /* flex-direction: column-reverse; */
+        }
+
+        .items{
+            border: 2px solid black;
+            width: 79px;
+            height: 50px;
+            margin: 8px 10px;
+            background-color: aqua;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+         <div class="items">1</div>
+         <div class="items">2</div>
+         <div class="items">3</div>
+         <div class="items"></div>
+    
+        
+         <div class="items"></div>
+         <div class="items"></div>
+         <div class="items"></div>
+         <div class="items"></div>
+    </div>
+
+</body>
+</html>
