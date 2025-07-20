@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* .box:first-child {
+            color: brown;
+        } */
+        /* .box::first-line{
+            color: aquamarine;
+         } */
+        .boxes * {
+            border: 1px solid black;
+            color: aqua;
+        }
+
+        .boxes::before {
+            content: "Harry is good";
+        }
+
+        .boxes::selection {
+            color: deeppink;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box">Hey I am box 1</div>
+        <div class="box">Hey I am box 2</div>
+        <div class="box">Hey I am box 3</div>
+    </div>
+</body>
+
+</html>
