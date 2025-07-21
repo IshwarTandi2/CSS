@@ -1,44 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
+
+          <!-- what to learn
+              Container Property's
+          1.Justify Content & align items
+          2.Flex direction
+          3.Flex axis
+          4.Align content
+          5.Wrap Reverse
+          6.Flex Flow
+          7. Gap property - row gap & column gap -->
+
+             <!-- items property
+          1. order 
+          2. flex-grow
+          3. flex-shrink
+          4. align-self -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Flexbox</title>
     <style>
-        .container{
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
             border: 2px solid black;
+            box-sizing: border-box;
             width: 98vw;
-            height:80vh;
+            margin: 5px 14px;
+            height: 80vh;
             display: flex;
-            justify-content:center;
-            align-items:center;
-            /* flex-direction: column-reverse; */
+            /* justify-content: center;
+            align-items: center;
+            flex-direction:column ;
+            flex-wrap: wrap;
+            align-content: center; 
+              row-gap: 10px;
+            column-gap: 5px; */
+           
         }
 
-        .items{
+        .items {
             border: 2px solid black;
-            width: 79px;
-            height: 50px;
-            margin: 8px 10px;
+            width: 70px;
+            height: 42px;
             background-color: aqua;
+            margin: 5px;
+           
+            flex-grow: 1;
 
         }
+        .item1{
+            flex-grow: 5;
+        }
+      
     </style>
 </head>
+
 <body>
-    
-    <div class="container">
-         <div class="items">1</div>
-         <div class="items">2</div>
-         <div class="items">3</div>
-         <div class="items"></div>
-    
-        
-         <div class="items"></div>
-         <div class="items"></div>
-         <div class="items"></div>
-         <div class="items"></div>
-    </div>
+
+    <main>
+        <div class="container">
+            <div class="items item1"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            
+            
+        </div>
+    </main>
+
 
 </body>
+
 </html>
