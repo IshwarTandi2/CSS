@@ -5,12 +5,13 @@
 
           <!-- what to learn
               Container Property's
+          0. Display : Flex
           1.Justify Content & align items
           2.Flex direction
-          3.Flex axis
-          4.Align content
-          5.Wrap Reverse
-          6.Flex Flow
+          3.Flex axis  - (main axis & cross axis)
+          4.Flex - wrap,nowrap,wrap-reverse
+          5.Align content - if items are more than one line then we use align content & if there is only 1 line we use align items
+          6.Flex Flow - it is used to set 2 properties flex direction & flex warp
           7. Gap property - row gap & column gap -->
 
              <!-- items property
@@ -24,41 +25,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Flexbox</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
+      
+
+        .container{
+              border: 2px solid red;
+              width: 100vw;
+              height: 80vh;
+              display: flex;
+               justify-content: center; /*Controls horizontal movement */
+              align-items: center;   /*Controls vertical movement */
+              flex-direction: column-reverse; /* By default flex direction is row wise & it lays from left to right */
+              flex-wrap: wrap; /* if the content overflows from container it wraps the content in next line*/
+              gap: 20px 20px; /* Gap between row & columns*/
+              
+        }
+        .item3{
+            align-self: flex-end; /* to move a particular element */
         }
 
-        .container {
+        .items{
+            width: 92px;
+            height: 92px;
             border: 2px solid black;
-            box-sizing: border-box;
-            width: 98vw;
-            margin: 5px 14px;
-            height: 80vh;
-            display: flex;
-            /* justify-content: center;
-            align-items: center;
-            flex-direction:column ;
-            flex-wrap: wrap;
-            align-content: center; 
-              row-gap: 10px;
-            column-gap: 5px; */
-           
-        }
-
-        .items {
-            border: 2px solid black;
-            width: 70px;
-            height: 42px;
             background-color: aqua;
-            margin: 5px;
-           
-            flex-grow: 1;
-
+            margin: 4px;
         }
         .item1{
-            flex-grow: 5;
+            flex-grow: 0;
         }
+
       
     </style>
 </head>
@@ -67,7 +62,20 @@
 
     <main>
         <div class="container">
-            <div class="items item1"></div>
+            <div class="items item1">0</div>
+            <div class="items">1</div>
+            <div class="items">2</div>
+            <div class="items item3">3</div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
             <div class="items"></div>
             <div class="items"></div>
             <div class="items"></div>
